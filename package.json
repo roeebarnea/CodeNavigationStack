@@ -2,7 +2,7 @@
   "name": "code-navigation-stack",
   "displayName": "Code Navigation Stack",
   "description": "Visualize your code navigation history as an interactive tree and stack",
-  "version": "0.2.13",
+  "version": "0.2.16",
   "publisher": "RoeeBarnea",
   "icon": "resources/CodeNavigationStackLogo.png",
   "license": "MIT",
@@ -96,7 +96,8 @@
     "eslint": "^8.39.0",
     "glob": "^8.1.0",
     "mocha": "^10.2.0",
-    "typescript": "^5.0.4"
+    "typescript": "^5.0.4",
+    "vsce": "^2.12.0"
   },
   "dependencies": {
     "@tootallnate/once": "^3.0.0",

@@ -74,13 +74,7 @@ This extension works out of the box with no configuration required. The views wi
 
 ## Known Issues
 
-Please report any issues on the [GitHub repository](https://github.com/robarnea_microsoft/CodeNavigatorStack/issues).
-
-## Release Notes
-
-### 0.2.9
-
-Current release with improved stability and performance.
+Please report any issues on the [GitHub repository](https://github.com/roeebarnea/CodeNavigationStack/issues).
 
 ## Development
 
@@ -133,9 +127,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 If you find this extension helpful, please consider:
 
-- ⭐ Starring the [GitHub repository](https://github.com/robarnea_microsoft/CodeNavigatorStack)
+- ⭐ Starring the [GitHub repository](https://github.com/roeebarnea/CodeNavigationStack)
 - 📝 Writing a review on the [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=RoeeBarnea.code-navigation-stack)
-- 🐛 Reporting bugs or suggesting features via [GitHub Issues](https://github.com/robarnea_microsoft/CodeNavigatorStack/issues)
+- 🐛 Reporting bugs or suggesting features via [GitHub Issues](https://github.com/roeebarnea/CodeNavigationStack/issues)
 
 ---
 
