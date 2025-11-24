@@ -36,14 +36,6 @@ This panel shows your current navigation branch, displaying the path from the ro
 - 🎨 Color-coded file indicators
 - ⚡ Quick navigation by clicking on any stack entry
 
-## How It Works
-
-The extension tracks your cursor position as you navigate through code:
-
-- When you move to a function, method, or property definition
-- It builds a hierarchical tree of your navigation path
-- The current path is displayed in both the tree and stack views
-- You can navigate backward by clicking on any previous position
 
 ## Use Cases
 
@@ -52,76 +44,14 @@ The extension tracks your cursor position as you navigate through code:
 - **Learning**: Visualize code structure relationships as you explore
 - **Refactoring**: Keep track of dependencies while restructuring code
 
-## Installation
-
-1. Open VS Code
-2. Go to Extensions (Ctrl+Shift+X / Cmd+Shift+X)
-3. Search for "Code Navigation Stack"
-4. Click Install
-
-Or install from the [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=RoeeBarnea.code-navigation-stack)
-
-## Requirements
-
-- Visual Studio Code version 1.78.0 or higher
-
-## Extension Settings
-
-This extension works out of the box with no configuration required. The views will automatically appear in:
-
-- Explorer sidebar: Code Navigation Tree
-- Panel area: Code Navigation Stack
 
 ## Known Issues
 
 Please report any issues on the [GitHub repository](https://github.com/roeebarnea/CodeNavigationStack/issues).
 
-## Development
-
-### Running Tests
-
-The extension includes comprehensive unit tests covering core functionality:
-
-```bash
-# Run all tests
-npm test
-
-# Compile in watch mode for development
-npm run watch
-
-# Run linter
-npm run lint
-```
-
-For detailed testing information, see [TESTING.md](TESTING.md).
-
-### Building from Source
-
-```bash
-# Install dependencies
-npm install
-
-# Compile TypeScript
-npm run compile
-
-# Package the extension
-vsce package
-```
-
 ## Contributing
 
 Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
-
-Quick start:
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes with tests
-4. Submit a Pull Request
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Support
 
