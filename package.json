@@ -1,0 +1,109 @@
+{
+  "name": "code-navigation-stack",
+  "displayName": "Code Navigation Stack",
+  "description": "Visualize your code navigation history as an interactive tree and stack",
+  "version": "0.2.13",
+  "publisher": "RoeeBarnea",
+  "icon": "resources/CodeNavigationStackLogo.png",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/robarnea_microsoft/CodeNavigatorStack"
+  },
+  "bugs": {
+    "url": "https://github.com/robarnea_microsoft/CodeNavigatorStack/issues"
+  },
+  "homepage": "https://github.com/robarnea_microsoft/CodeNavigatorStack#readme",
+  "keywords": [
+    "navigation",
+    "code-navigation",
+    "call-stack",
+    "breadcrumb",
+    "explorer",
+    "tree-view",
+    "productivity"
+  ],
+  "engines": {
+    "vscode": "^1.78.0"
+  },
+  "categories": [
+    "Visualization",
+    "Other"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./out/extension.js",
+  "extensionDependencies": [
+    "vscode.git"
+  ],
+  "contributes": {
+    "viewsContainers": {
+      "panel": [
+        {
+          "id": "codeNavigationStack",
+          "title": "Code Navigation Stack",
+          "icon": "./resources/stackIcon.svg"
+        }
+      ]
+    },
+    "views": {
+      "codeNavigationStack": [
+        {
+          "type": "webview",
+          "id": "navigationPanel",
+          "name": "Code Navigation Stack"
+        }
+      ],
+      "explorer": [
+        {
+          "id": "navigationTree",
+          "name": "Code Navigation Tree",
+          "contextualTitle": "Code Navigation Tree",
+          "icon": "./resources/stackIcon.svg"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "npm run compile:extension && npm run compile:webview",
+    "compile:extension": "tsc -p ./",
+    "compile:webview": "tsc -p ./src/webview",
+    "watch": "npm run watch:extension & npm run watch:webview",
+    "watch:extension": "tsc -watch -p ./",
+    "watch:webview": "tsc -watch -p ./src/webview",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "node ./out/test/runTest.js",
+    "package": "npm run compile && vsce package",
+    "version:patch": "npm version patch --no-git-tag-version",
+    "version:minor": "npm version minor --no-git-tag-version",
+    "version:major": "npm version major --no-git-tag-version",
+    "publish": "npm run version:patch && npm run package"
+  },
+  "devDependencies": {
+    "@types/crypto-js": "^4.2.2",
+    "@types/glob": "^8.1.0",
+    "@types/jsdom": "^21.1.6",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "16.x",
+    "@types/vscode": "^1.78.0",
+    "@typescript-eslint/eslint-plugin": "^5.59.1",
+    "@typescript-eslint/parser": "^5.59.1",
+    "@vscode/test-electron": "^2.3.0",
+    "esbuild": "^0.27.0",
+    "eslint": "^8.39.0",
+    "glob": "^8.1.0",
+    "mocha": "^10.2.0",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "@tootallnate/once": "^3.0.0",
+    "azure-kusto-data": "^5.2.3",
+    "child_process": "^1.0.2",
+    "crypto-js": "^4.2.0",
+    "jsdom": "^24.0.0",
+    "uuid": "^9.0.1"
+  }
+}
